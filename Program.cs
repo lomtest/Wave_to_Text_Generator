@@ -15,12 +15,9 @@ namespace WaveFormGenerator
         static void Main(string[] args)
         {
             
-            Console.WriteLine("WaveForm to Textfile Generator");
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("WaveForm to Textfile Generator \n------------------------------");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Select waveform: ");
-            Console.WriteLine("Sine");
-            Console.WriteLine("Square");
+            Console.WriteLine("Select \nwaveform: \nSine \nSquare \nDefault is random numbers");
             Console.ForegroundColor = ConsoleColor.Cyan;
             waveform = Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.Green;
@@ -41,7 +38,7 @@ namespace WaveFormGenerator
             sw.Write(a.generate(numbersSamples, topValue, multiply));
             sw.Close();
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Your waveform is ready to use");
+            Console.WriteLine("Your " + waveform + "waveform is ready to use (in " + waveform + "Table.txt)");
             Console.ReadKey();
 
         }
