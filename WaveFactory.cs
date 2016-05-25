@@ -24,7 +24,7 @@ namespace WaveFormGenerator
                     return new SineWave();
 
                 default:
-                    return null;
+                    return new NoiseWave();
             }
         }
     }
